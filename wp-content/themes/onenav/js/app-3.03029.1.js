@@ -18,11 +18,7 @@
         if(isPC()){ $('[data-toggle="tooltip"]').tooltip({trigger: 'hover'}); }else{ $('.qr-img[data-toggle="tooltip"]').tooltip({trigger: 'hover'}); }
         // 初始化tab滑块
         intoSlider();
-        // 初始化theiaStickySidebar
-        $('.sidebar').theiaStickySidebar({
-            additionalMarginTop: 90,
-            additionalMarginBottom: 20
-        });
+
         // 初始化游客自定义数据
         if(theme.isCustomize == '1'){
             intoSites(false);
